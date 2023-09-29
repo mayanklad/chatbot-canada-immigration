@@ -1,0 +1,1 @@
+This repository contains the source code for a Canadian Immigration Chatbot built using the Rasa Framework. The chatbot is designed to assist users in obtaining information and guidance regarding the Canadian immigration process.
