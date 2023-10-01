@@ -89,3 +89,39 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: visitor_visa_question
+  examples: |
+    - Do I need a visa to visit Canada?
+    - I am visiting the U.S. and I want to come to Canada. Do I need an eTA?
+    - What is a business visitor?
+    - Do I need to apply for both a visitor visa and an eTA?
+    - Do I need a visa if I’m just traveling through Canada on my way to another country?
+    - What is the difference between a single and a multiple entry visa?
+    - Why was I issued a single-entry visa instead of a multiple entry visa?
+    - I have an eTA or a visa. What can I expect when I arrive in Canada?
+    - I am in Canada on a temporary resident visa. I plan to take a cruise. Do I need a new visa to come back to Canada?
+    - How do I get a transit visa?
+    - How do I get help if my visa application is refused?
+
+- intent: healthcare_question
+  examples: |
+    - If I get sick or have an accident while visiting Canada, will the Government of Canada pay for my medical treatment?
+
+- intent: permenant_residence_question
+  examples: |
+    - How do I validate a Confirmation of Permanent Residence or a permanent resident visa if I live in Canada?
+    - Must I leave Canada by the valid until date on my visitor visa?
+    - I need to leave Canada and I do not have a permanent resident card. Can I later return to Canada without a PR card?
+
+- intent: work_permit_question
+  examples: |
+    - Can I leave and come back to Canada if I have a work permit?
+
+- intent: study_permit_question
+  examples: |
+    - I've applied to extend my study permit. Can I travel outside Canada and be able to return?
+    - I’m waiting for my post-graduation work permit. Can I travel outside Canada and come back with my student visa?
+
+- intent: citizenship_question
+  examples: |
+    - How can I get help with my immigration or citizenship application?
