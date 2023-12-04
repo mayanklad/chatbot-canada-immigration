@@ -10,6 +10,9 @@ intents:
   - bot_challenge
 
 responses:
+  utter_welcome:
+  - text: Hi there! What can I help you with today?
+  
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -28,6 +31,9 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_custom_chatbot
 
 session_config:
   session_expiration_time: 60

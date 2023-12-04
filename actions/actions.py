@@ -1,60 +1,47 @@
-import pandas as pd
-from typing import Text, List, Dict, Any
+import re
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from transformers import TFGPT2LMHeadModel, GPT2Tokenizer
-import random
-
-class ActionGenerateResponse(Action):
+import torch
+class CustomChatbotAction(Action):
     def name(self) -> Text:
-        return "action_generate_response"
-    
-    def load_dataset_for_category(self, category: str):
-        df = pd.read_excel('./dataset.xlsx')
-        filtered_data = df[df['category'] == category]
+        return "action_custom_chatbot"
+
+    def __init__(self):
+        self.MODEL_PATH = 'D:\workspaces\python-workspace\Fall-2023\F2023_AML3406_2\capstone-project\chatbot-canada-immigration\llm\chatbot_model.pt'
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
         
-        dataset_for_category = [
-            {"question": row['question'], "answer": row['answer']}
-            for index, row in filtered_data.iterrows()
-        ]
+        self.tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+        self.tokenizer.add_special_tokens({"pad_token": "<pad>",
+                                "bos_token": "<startofstring>",
+                                "eos_token": "<endofstring>"})
+        self.tokenizer.add_tokens(["<bot>:"])
         
-        return dataset_for_category
+        self.model = GPT2LMHeadModel.from_pretrained(pretrained_model_name_or_path=self.MODEL_PATH, local_files_only=True)
+        self.model = self.model.to(self.device)
 
-    async def run(
-        self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]
-    ) -> List[Dict[Text, Any]]:
-        user_intent = tracker.latest_message["intent"]["name"]
+    def generate_response(self, user_input):
+        user_input = "<startofstring> " + user_input + " <bot>: "
+        user_input = self.tokenizer(user_input, return_tensors="pt")
+        
+        X = user_input["input_ids"].to(self.device)
+        a = user_input["attention_mask"].to(self.device)
 
-        intent_to_category = {
-            "visitor_visa_question": "Visitor Visa",
-            "healthcare_question": "Healthcare",
-            "permanent_residence_question": "Permanent Residence"
-            # Add mappings for other intents and categories
-        }
+        output = self.model.generate(X, attention_mask=a, max_length=50)
+        output = self.tokenizer.decode(output[0], skip_special_tokens=True)
+        
+        output = re.split('<bot>:', output)[-1].strip()
+        output = re.split("<end", output, 1)[0].strip()
+        
+        return output
 
-        category = intent_to_category.get(user_intent)
-        if category is None:
-            dispatcher.utter_message("I'm sorry, I don't have an answer for that question.")
-            return []
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_input = tracker.latest_message.get('text')
 
-        model_name = "gpt2"
-        tokenizer = GPT2Tokenizer.from_pretrained(model_name)
-        model = TFGPT2LMHeadModel.from_pretrained(model_name)
+        # Generate response using your custom GPT model
+        response = self.generate_response(user_input)
 
-        dataset_for_category = self.load_dataset_for_category(category)
-
-        response = random.choice(dataset_for_category)
-
-        input_text = response["question"]
-        input_ids = tokenizer.encode(input_text, return_tensors="pt", max_length=50, truncation=True)
-        generated_output = model.generate(input_ids, max_length=100, num_return_sequences=1, pad_token_id=50256)
-
-        response_text = tokenizer.decode(generated_output[0], skip_special_tokens=True)
-
-        dispatcher.utter_message(response_text)
+        dispatcher.utter_message(text=response)
 
         return []
-
-class ActionUtterAnswer(Action):
-    def name(self) -> Text:
-        return "utter_answer"
