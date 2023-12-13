@@ -38,10 +38,11 @@ class CustomChatbotAction(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_input = tracker.latest_message.get('text')
+        nlu_metrics = tracker.latest_message
 
-        # Generate response using your custom GPT model
+        # Generate response using custom GPT model
         response = self.generate_response(user_input)
 
-        dispatcher.utter_message(text=response)
+        dispatcher.utter_message(text=response, json_message=nlu_metrics)
 
         return []
