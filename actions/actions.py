@@ -1,4 +1,5 @@
 import re
+import os
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
@@ -9,16 +10,17 @@ class CustomChatbotAction(Action):
         return "action_custom_chatbot"
 
     def __init__(self):
-        self.MODEL_PATH = 'D:\workspaces\python-workspace\Fall-2023\F2023_AML3406_2\capstone-project\chatbot-canada-immigration\llm\chatbot_model.pt'
+        # self.MODEL_PATH = os.path.normpath(os.path.join(os.path.dirname( __file__ ), '..', 'llm_model.pt'))
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         
-        self.tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-        self.tokenizer.add_special_tokens({"pad_token": "<pad>",
-                                "bos_token": "<startofstring>",
-                                "eos_token": "<endofstring>"})
-        self.tokenizer.add_tokens(["<bot>:"])
+        self.tokenizer = GPT2Tokenizer.from_pretrained('mayanklad/faq-canada-immigration-tokenizer')
+        # self.tokenizer.add_special_tokens({"pad_token": "<pad>",
+        #                         "bos_token": "<startofstring>",
+        #                         "eos_token": "<endofstring>"})
+        # self.tokenizer.add_tokens(["<bot>:"])
         
-        self.model = GPT2LMHeadModel.from_pretrained(pretrained_model_name_or_path=self.MODEL_PATH, local_files_only=True)
+        self.model = GPT2LMHeadModel.from_pretrained('mayanklad/faq-canada-immigration')
+        self.model.resize_token_embeddings(len(self.tokenizer))
         self.model = self.model.to(self.device)
 
     def generate_response(self, user_input):
