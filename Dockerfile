@@ -1,4 +1,4 @@
-FROM python:3.9.18-stretch AS BASE
+FROM python:3.9.18-bookworm AS BASE
 
 RUN apt-get update \
     && apt-get --assume-yes --no-install-recommends install \
@@ -15,7 +15,7 @@ WORKDIR /app
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
 
-RUN pip install rasa transformer torch torchvision torchaudio
+RUN pip install rasa transformers torch torchvision torchaudio
 
 ADD config.yml config.yml
 ADD domain.yml domain.yml

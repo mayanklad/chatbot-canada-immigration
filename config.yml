@@ -49,3 +49,6 @@ policies:
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
+
+actions:
+  - action_server: http://rasa-actions-server:5055/webhook
