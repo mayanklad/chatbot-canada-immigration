@@ -90,39 +90,1389 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: faqs/visitor_visa_question
+- intent: faqs/adoption
   examples: |
-    - Do I need a visa to visit Canada?
+    - How do I adopt a child from another country?
+    - I’m a temporary resident, can I apply to adopt a child from another country?
+    - My adoption is complete. What do I need now to bring my adopted child to Canada?
+    - Does an adopted child need a travel document, like a visa, to come to Canada?
+    - How long will the adoption process take?
+    - I’ve done the necessary paperwork, I’m a citizen or permanent resident of good standing, and I went through a reputable adoption agency. Why is my adoption taking so long?
+    - Do the criteria for permanent residence and for a grant of citizenship differ for adopted children?
+    - Are the fees the same for an adopted child for the permanent residence and citizenship processes?
+    - Are there countries from which I cannot adopt?
+    - I have applied for permanent residence for my adopted child. Is it too late to apply for citizenship instead?
+    - My adopted child has permanent residence. How can I apply for their citizenship?
+    - How does adoption affect my child’s relationship with their biological parents?
+    - If my adopted child’s application is refused, what can I do?
+    - Will my child automatically have the right to a Canadian passport once they get citizenship?
+    - I live in Quebec. Must a Quebec court recognize the adoption before my child can get citizenship?
+    - Should I apply for permanent residence for my adopted child, rather than Canadian citizenship?
+    - What is the Hague Convention?
+    - Can I adopt a child from countries experiencing armed conflict or natural disasters?
+
+- intent: faqs/application_status
+  examples: |
+    - How can I check the status of my application?
+    - When can I check my application status?
+    - What does my status mean in the application status tracker?
+    - Why can’t I create an account in the application status tracker?
+    - How can I update or ask about an IRCC application in progress?
+    - Why can’t I see my application status in the Client Application Status (CAS) tool?
+    - What types of applications can I follow through Client Application Status (CAS)?
+    - What does the progress bar in my application status mean?
+    - What does the progress bar in my application status mean?
+    - Why isn’t there a progress bar for my application?
+    - Why is there a difference between my progress bar and my application progress?
+    - My family and I applied for permanent residence. Why can’t I see the application status?
+    - I am sponsoring a member of my family and cannot see the status of my application. Why?
+    - Why can I no longer use CAS to see the status of my application to sponsor a family member?
+    - I paid for a family member’s citizenship application even though I was not applying. I got a letter, so can I use CAS?
+    - What do I enter in CAS if I have more than one surname or family name?
+    - I have changed my surname or family name recently. What name should I use to access CAS?
+    - If the name of my place of birth has changed, what place of birth should I enter in CAS?
+    - What does the CAS case status in process mean?
+    - Why has the status of my immigration application on CAS not changed, even though I sent it a long time ago?
+    - How often is the information on the Client Application Status (CAS) service updated?
+    - What if I do not want my immigration application status information to be available in CAS?
+    - I have removed my application status from CAS by mistake. How can I put it back on?
+    - If I applied to immigrate to Quebec, can I see my application status on CAS?
+    - Is the information on CAS my official confirmation from Citizenship and Immigration Canada?
+    - I have followed all these instructions and I still can’t see my immigration application status in CAS. What can I do?
+    - What does it mean when my CAS session times out?
+    - Which browsers can I use with the Client Application Status (CAS) tool?
+    - Why do I need to clear my browser cache?
+    - How do I upgrade my browser?
+    - What does encryption mean and is it safe to use Client Application Status (CAS)?
+    - What is Secure Sockets Layer (SSL)?
+    - How do I log out of Client Application Status (CAS)?
+    - What are processing times?
+    - I’m a Canadian citizen living outside Canada. I mailed an application to the Sydney, Nova Scotia office. Who can I contact if I have a question?
+    - Why are there differences between the status I see in the Check application status tool (CAS) and in my account?
+    - The application / profile details in my online account have changed. Why are the details different?
+    - Why have processing times changed for some application types?
+    - What are processing times?
+    - How long will it take to process my application?
+    - When does my processing time start?
+    - Will it take longer to process my application because I have to give biometrics?
+    - Why do some application processing times change and others do not?
+    - What is the difference between processing times and service standards?
+    - How are processing times calculated?
+    - What is a complex permanent residence application?
+    - Why are there differences in processing times among regions and offices?
+    - What is a complete application package?
+    - How can I avoid delays or refusals in processing my application?
+    - How long will the adoption process take?
+    - How can I check the status of my application?
+    - Where are IRCC’s visa offices?
+    - How can I update or ask about an IRCC application in progress?
+
+- intent: faqs/applying_general
+  examples: |
+    - What immigration programs can I apply for?
+    - How can I come to Canada as a visitor, worker or student?
+    - How can I determine whether I can apply for permanent residence?
+    - How long must I stay in Canada to keep my permanent resident status?
+    - How do I fill out an IRCC application?
+    - How do I fill out and validate IRCC application forms with 2D barcodes?
+    - Why won’t my application form let me save my information or digitally sign it?
+    - What is an application number?
+    - What is my client ID?
+    - What is a UCI?
+    - Where can I find my client ID/UCI?
+    - I forgot my client ID/UCI. How can I get it?
+    - When will I get my client ID/UCI?
+    - What do you mean by surname?
+    - I don’t know what dates to put in the history section on my immigration form. What do I do?
+    - I don’t have enough space on the form to explain everything. What should I do?
+    - What if some of the questions on the application form don’t apply to me?
+    - How do I fill out my application for a citizenship certificate if I don’t know everything about my parents or grandparents?
+    - How do I apply for an open work permit?
+    - What language should my supporting documents be in?
+    - If I am not using a representative, do I need to send a blank Use of a Representative form?
+    - What should I do if I want my spouse, family member or friend to check on my application for me?
+    - How can I get my immigration application processed faster?
+    - What happens after I send in my application?
+    - If my immigration application is refused, do I have to wait before I apply again?
+    - Can my friend or family member handle my immigration or citizenship application for me?
+    - The refugee our group wanted to sponsor was refused after an interview. Can we appeal?
+    - How can I pay my application fees?
+    - How do I pay online?
+    - How do I reset my password for the online payment system?
+    - Can I pay my fees at a bank in Canada?
+    - Is my payment receipt form (IMM 5401) still valid?
+    - How can I get a copy of my receipt after paying my fees?
+    - I can’t access my online payment account to get a copy of my receipt. What can I do?
+    - Why is my online payment being refused?
+    - I tried to pay online but it was incomplete. Why is it showing on my bank statement?
+    - How do I pay online if I don’t have a credit card or a bank account?
+    - Can someone else pay for my fees?
+    - Which browsers can I use to pay online?
+    - What is the Right of Permanent Residence Fee?
+    - I submitted my application with the old permanent residence fees. Will my application be rejected or returned?
+    - I submitted my application and paid the processing fee before April 30, 2022. I haven’t paid the right of permanent residence fee (RPRF) yet. Do I pay the old or new RPRF?
+    - I received a letter from IRCC saying that my permanent residence application is incomplete. I paid the old fees already, but want to submit a new application. How do I pay my new permanent residence fees?
+    - How do I submit my application?
+    - How can I check if my application has been received?
+    - I was told that my permanent resident card was sent to me but I did not get it yet. What should I do?
+    - I legally changed my name. How do I update my PR card?
+    - How can I get help with my immigration or citizenship application?
+    - If I need the documents I mailed in, how will you return them to me if IRCC isn’t using Canada Post mail services?
+    - I don't have a document I need to submit. What should I do?
+    - My application was returned because something was missing. What can I do?
+    - My application was returned by email. Can I resubmit copies of these documents?
+    - My application was returned by email. How do I re-submit it?
+    - You returned my application by email. Can I get my documents back?
+    - Why was my application returned to me by email?
+    - How do I complete the web form if I applied for permanent residence under a pilot program?
+    - What is a personal document checklist?
+    - What is a personal reference code?
+    - Is there a file size limit for documents I upload to my account?
+    - I need to add multiple files to my online application, but there is only one field to upload documents. What can I do?
+    - Can I send a new document after I apply online?
+    - What file formats can I upload to my account?
+    - How do I view the messages in my account?
+    - How long do I have to complete and submit my online application?
+    - How do I sign my online application?
+    - How do I cancel an application I submitted online?
+    - I have a question about a document I am asked to submit in my online account. Who can I ask?
+    - An officer asked me to provide a document in my account, but I’m missing information. What do I do?
+    - What do I do if my Sign-in Partner was removed?
+    - What are electronic credentials?
+    - What services do I need Sign-In Partner or GCKey for?
+    - What do you mean by authentication?
+    - I had to switch my electronic log-in credentials not that long ago. Why are you changing it again?
+    - Can I still use my Access Key?
+    - Who can I contact if I have questions about GCKey or Sign-In Partner?
+    - What is Sign-In Partner?
+    - Which banks are participating in Sign-In Partner?
+    - Why is the Government of Canada offering users the option to use banking credentials?
+    - What are the advantages of using my online banking credentials?
+    - Is the banking credential (Sign-In Partner) as secure as the government credential (GCKey)?
+    - Will any of my banking information be shared if I use Sign-In Partner?
+    - I don’t bank with any of the financial institutions listed. What alternative do I have when I want to access government services online?
+    - My bank is on your list, but I don’t have online banking. How do I access the IRCC secure account using Sign-In Partner?
+    - I would rather not use Sign-In Partner to access the IRCC secure account. What are my options?
+    - Will the bank charge me for using my banking credential to access government services?
+    - Will I still be able to use GCKey even if I decided to use my online banking credentials once?
+    - What are electronic credentials?
+    - What services do I need Sign-In Partner or GCKey for?
+    - What do you mean by authentication?
+    - I had to switch my electronic log-in credentials not that long ago. Why are you changing it again?
+    - Can I still use my Access Key?
+    - Who can I contact if I have questions about GCKey or Sign-In Partner?
+    - What is GCKey?
+    - Why has the Government of Canada introduced GCKey?
+    - How do I get a GCKey credential?
+    - Who has access to the information I submit when I register for a GCKey?
+    - What do I do if I lost my GCKey username or password?
+    - How do I change my GCKey password?
+    - What are the rules for creating a username or password?
+    - What if I no longer want to use my GCKey?
+    - Why did the action button in my GCKey account disappear?
+    - I have not been able to submit an eTA application because of technical issues (i.e. with payment or the application form). Can I still fly to Canada?
+    - I submitted an eTA application, but have not received any emails from IRCC. Can I still travel to Canada?
+    - I got an email confirmation from IRCC that my eTA application was received, but nothing since then. Can I still travel to Canada?
+    - I cannot submit the additional documents required for my eTA application by the requested deadline. Can I still travel to Canada?
+    - I submitted the documents for my eTA application but I haven’t heard anything yet. Can I still travel to Canada?
+    - My application for an eTA was refused. Can I still travel to Canada?
+    - What is a visa-exempt foreign national?
+    - Will the eTA application information be available in multiple languages?
+    - Are there any age exemptions for eTA?
+    - I will transit by air through Canada. Do I need an eTA?
+    - I am a permanent resident of Canada. Do I need an eTA if I leave and want to return to Canada by air?
+    - I am a permanent resident of Canada. Can I apply for an eTA?
+    - I am an American citizen. What do I need to enter Canada?
+    - I am a NEXUS or CANPASS member and U.S. green card holder. Do I need an eTA to fly to Canada?
+    - I have a visa or a temporary resident permit to enter Canada. Do I need an eTA too?
     - I am visiting the U.S. and I want to come to Canada. Do I need an eTA?
-    - What is a business visitor?
-    - Do I need to apply for both a visitor visa and an eTA?
-    - Do I need a visa if I’m just traveling through Canada on my way to another country?
-    - What is the difference between a single and a multiple entry visa?
-    - Why was I issued a single-entry visa instead of a multiple entry visa?
-    - I have an eTA or a visa. What can I expect when I arrive in Canada?
-    - I am in Canada on a temporary resident visa. I plan to take a cruise. Do I need a new visa to come back to Canada?
-    - How do I get a transit visa?
-    - How do I get help if my visa application is refused?
+    - I have an ESTA and I am visiting the U.S. Can I use my ESTA to enter Canada?
+    - I am a dual citizen of the U.S. and another country. Do I need an eTA?
+    - I am a Canadian citizen. Do I need an eTA to enter Canada?
+    - I am a Canadian citizen and a citizen of another country. Can I fly to Canada with my non-Canadian passport?
+    - Can I apply for an eTA with a Refugee Travel Document?
+    - I have committed an offence and suspect or know that I am inadmissible to Canada. Should I still apply for an eTA?
+    - I have been refused entry to Canada in the past. Does this mean that I will be refused an eTA?
+    - Can a business or agency organizing charter flights to Canada for tour groups get eTAs for their clients?
+    - Do travellers on chartered aircrafts need an eTA?
+    - Do VIPs, Heads of State or diplomats need an eTA to travel to Canada?
+    - Can diplomats who are not accredited in Canada, but accredited elsewhere, travel to Canada without an eTA?
+    - I live in St. Pierre and Miquelon and am a citizen of France. I want to travel to Canada by air. Do I need an eTA?
+    - How do I apply for an eTA for travel to Canada?
+    - I see other websites advertising that I can apply for an eTA with them. Is there more than one website to apply for an eTA?
+    - What type of information do I need to complete an eTA application?
+    - Can I apply for an eTA for my child?
+    - Can I help a friend or family member apply for an eTA?
+    - As a Canadian citizen living in Canada, can I apply for an eTA for my non-Canadian relative or friend who lives abroad?
+    - Can more than one person, including dependents, be included in an eTA application?
+    - Can I submit a group application for eTA?
+    - Can I use my email address when I apply for an eTA on behalf of someone?
+    - Can I start my eTA application and save it?
+    - Can I review my eTA application before I submit it?
+    - What happens if I made a mistake (like an email address or passport number) on my eTA application?
+    - Can I apply for an eTA using a document other than a passport?
+    - What options are available to pay the eTA application fee?
+    - Do I have to apply for an eTA each time I travel to Canada?
+    - I must travel to Canada for exceptional circumstances. Can I get my eTA on an urgent basis?
+    - Will IRCC email me when my eTA is approved?
+    - What information will I get by email after I apply for an eTA?
+    - Why am I not receiving any emails from IRCC about my eTA application?
+    - How long will it take to process my eTA application?
+    - I applied for an eTA on a different website. How do I verify if I have a real eTA?
+    - I have been charged more than $7 CAD for my eTA on another website. I think I have been scammed. How can I find out and can I get a refund?
+    - I have to submit documents for my eTA application. How can I find out what documents I need to provide?
+    - I need to submit documents in a secure IRCC account for my eTA application. How can I do this?
+    - What do I do if my application for an eTA is not approved right away?
+    - Do I have to print anything to prove that I have an eTA?
+    - Can I withdraw my eTA application?
+    - If my eTA is cancelled after I get one, can I travel?
+    - What happens if I get a new passport after I have received an eTA?
+    - My application for an eTA was refused. Can I get a refund?
+    - My application for an eTA was refused. Is there a way I can appeal?
+    - Does having an eTA automatically mean that I am allowed to enter Canada?
+    - I can’t sign in to my IRCC secure account. What should I do?
+    - I can’t open my application form in PDF format. What can I do?
+    - After I click the Validate button on my application form, nothing happens and I don’t see the barcodes. Why?
+    - I get a Bad Encrypt Dictionary error opening a PDF. What does this mean?
+    - You asked me for a new document. How do I submit it?
+    - I don’t see the option to upload documents in my account, even though IRCC has asked for it. What do I do?
+    - I validated my form, but when I try to upload it to my account I get a validation error. What can I do?
+    - Which applications can I link to an IRCC secure account?
+    - Why was I locked out of my IRCC secure account when I tried to link an application?
+    - When trying to link my application to my IRCC secure account, it says there are no matches. What’s going on?
+    - What happens after I link an application to an IRCC secure account?
+    - How can I find a doctor to do my immigration medical exam?
+    - Why do I need a medical examination?
+    - How is the processing time affected if I need a medical exam?
+    - How can I check the status of my medical exam results?
+    - Can I have a medical exam done in advance to speed up my application?
+    - I’m pregnant. Can I wait until after I give birth to take the medical exam?
+    - I have applied for permanent residence. My spouse or partner and children are not coming with me. Do they need to get a medical exam?
+    - I think I’m exempt, why are you asking me for a medical exam?
+    - Why do I need to get a police certificate?
+    - When should I submit a police certificate?
+    - What if I can't get a police certificate for my immigration application?
+    - Do I need to get a police certificate for my time in Canada?
+    - Are there any countries where I should get police certificates from before applying for immigration?
+    - My police certificate is not in English or French. Do I need to send a translation?
+    - What is an affidavit for a translation?
+    - How do I give my fingerprints and get an RCMP criminal record check from inside or outside Canada?
+    - How can I change my address or contact information for my immigration or citizenship application?
+    - What is the difference between the Change of Address and the Address Notification online services?
+    - Who can use the Change of Address and the Address Notification online services?
+    - Who cannot use the Change of Address online service?
+    - Can I email my new address to Immigration, Refugees and Citizenship Canada (IRCC)?
+    - How long does it take for a new or updated address to appear online?
+    - Why does it take 5 business days for address changes to appear online?
+    - I am in Canada temporarily, as a worker, visitor or student. Why can’t I change my address online?
+    - Why does it take 5 business days for address changes to appear online?
+    - When should I tell Immigration, Refugees and Citizenship Canada (IRCC) that I am moving?
+    - How can I check that my address has been updated?
+    - I have changed my address online but I can’t see the changes. What should I do?
+    - How can I change the address of other people who were included in my immigration or citizenship application?
+    - Do I have to enter a change of address for each dependant?
+    - Do I have to enter an address notification for each dependant?
+    - Which applicants can access the Change of Address or the Address Notification online service?
+    - I live outside Canada. Can I update my mailing or home address online?
+    - I changed my address in CAS. Do I need to change it in Change of Address or Address Notification, too?
+    - If I remove my application status from the Internet on CAS, can I still use Change of Address or Address Notification?
+    - My application was refused. Can I get a refund?
+    - If I withdraw my application, will I get a refund?
+    - If you return my application, will I get a refund?
+    - I submitted an application but want to change programs. Can I apply the fees I already paid to my new application?
+    - I paid my fees online but decided not to submit an application. Can I get a refund?
+    - I didn’t pay enough for my application. What can I do?
+    - I paid too much for my application. Can I get a refund?
+    - I paid online for the wrong fee but the amount is correct. What should I do?
+    - How do I ask for a refund if I paid my fees online or at a bank in Canada?
+    - How do I withdraw my permanent resident card application?
+    - I got a refund but it was not the same amount I paid. Why?
+    - How can I extend my stay as a visitor?
+    - How can I extend my stay as a student?
 
-- intent: faqs/healthcare_question
+- intent: faqs/applying_online
   examples: |
-    - If I get sick or have an accident while visiting Canada, will the Government of Canada pay for my medical treatment?
+    - What is a personal document checklist?
+    - What is a personal reference code?
+    - s there a file size limit for documents I upload to my account?
+    - I need to add multiple files to my online application, but there is only one field to upload documents. What can I do?
+    - Can I send a new document after I apply online?
+    - What file formats can I upload to my account?
+    - How do I view the messages in my account?
+    - How long do I have to complete and submit my online application?
+    - How do I sign my online application?
+    - How do I cancel an application I submitted online?
+    - I have a question about a document I am asked to submit in my online account. Who can I ask?
+    - An officer asked me to provide a document in my account, but I’m missing information. What do I do?
+    - What are electronic credentials?
+    - What services do I need Sign-In Partner or GCKey for?
+    - What do you mean by authentication?
+    - I had to switch my electronic log-in credentials not that long ago. Why are you changing it again?
+    - Can I still use my Access Key?
+    - Who can I contact if I have questions about GCKey or Sign-In Partner?
+    - What do I do if my Sign-in Partner was removed?
+    - What are electronic credentials?
+    - What is Sign-In Partner?
+    - Which banks are participating in Sign-In Partner?
+    - Why is the Government of Canada offering users the option to use banking credentials?
+    - What are the advantages of using my online banking credentials?
+    - Is the banking credential (Sign-In Partner) as secure as the government credential (GCKey)?
+    - Will any of my banking information be shared if I use Sign-In Partner?
+    - I don’t bank with any of the financial institutions listed. What alternative do I have when I want to access government services online?
+    - My bank is on your list, but I don’t have online banking. How do I access the IRCC secure account using Sign-In Partner?
+    - I would rather not use Sign-In Partner to access the IRCC secure account. What are my options?
+    - Will the bank charge me for using my banking credential to access government services?
+    - Will I still be able to use GCKey even if I decided to use my online banking credentials once?
+    - What are electronic credentials?
+    - What services do I need Sign-In Partner or GCKey for?
+    - What do you mean by authentication?
+    - I had to switch my electronic log-in credentials not that long ago. Why are you changing it again?
+    - How do I change my GCKey password?
+    - What are the rules for creating a username or password?
+    - What if I no longer want to use my GCKey?
+    - Why did the action button in my GCKey account disappear?
+    - I can’t sign in to my IRCC secure account. What should I do?
+    - What browser should I use to apply online?
+    - After I click the Validate button on my application form, nothing happens and I don’t see the barcodes. Why?
+    - I get a Bad Encrypt Dictionary error opening a PDF. What does this mean?
+    - What do I do if an online application is down?
+    - I recently reset my IRCC secure account, but I don’t see my application. How can I get it back?
+    - I don’t see the option to upload documents in my account, even though IRCC has asked for it. What do I do?
+    - I validated my form, but when I try to upload it to my account I get a validation error. What can I do?
+    - Which applications can I link to an IRCC secure account?
+    - Why was I locked out of my IRCC secure account when I tried to link an application?
+    - When trying to link my application to my IRCC secure account, it says there are no matches. What’s going on?
+    - What happens after I link an application to an IRCC secure account?
+    - Why can’t I find all my documents or forms in the Permanent Residence Portal?
+    - How can I find other forms and supporting documents in the portal?
+    - I can’t complete my IMM 0008 form in the Permanent Residence Portal because my national identity card doesn’t have an expiry date. What should I do?
+    - Can I change the email address for my Permanent Residence Portal account?
+    - Why can’t I save and continue when completing digital forms in the Permanent Residence Portal?
+    - What happens if my application in the Permanent Residence Portal expires?
 
-- intent: faqs/permenant_residence_question
+- intent: faqs/asylum_claims
   examples: |
-    - How do I validate a Confirmation of Permanent Residence or a permanent resident visa if I live in Canada?
-    - Must I leave Canada by the valid until date on my visitor visa?
-    - I need to leave Canada and I do not have a permanent resident card. Can I later return to Canada without a PR card?
+    - How do I make a refugee claim in Canada?
+    - I already made a refugee claim. What happens now that we submit claims through the IRCC Portal?
+    - Can my refugee claim be rejected based on what I write in the Basis of Claim form?
+    - I’m having problems making a refugee claim online. What do I do?
+    - Is legal assistance available to asylum claimants?
+    - What is a Refugee Protection Claimant Document (RPCD) and when will I get one?
+    - I need to submit documents to the Immigration and Refugee Board of Canada (IRB). Can I use the portal?
+    - Will I still get an accelerated work permit if my claim isn’t eligible to be referred to the Immigration and Refugee Board of Canada?
+    - How long will the accelerated work permit for asylum claimants be valid for?
+    - What information do you need from me for the accelerated work permit for asylum claimants, and where do I send it?
+    - Can I also apply for a study permit through this accelerated process?
+    - My claim is pending at the Immigration and Refugee Board of Canada. Can I get a work permit extension through this accelerated process?
+    - How long will it take for me to get the work permit under the accelerated process for asylum claimants?
+    - Once I get my work permit under this accelerated process for refugee claimants in Canada, how do I apply for a Social Insurance Number?
 
-- intent: faqs/work_permit_question
+- intent: faqs/biometrics
   examples: |
-    - Can I leave and come back to Canada if I have a work permit?
+    - If I’m asked to give my biometrics, does that mean my application is approved?
+    - Why do I have to give my biometrics (fingerprints and photo) when I apply?
+    - How often will I need to go in person to give my fingerprints and photo?
+    - I need to give biometrics. What if there’s no visa application centre (VAC) in the country or territory I’m applying from?
+    - Will it take longer to get my visitor visa because I have to give my biometrics?
+    - If I get my photo taken for biometrics, do I still need to submit a paper photograph as part of my application?
+    - I cover my head or face for religious or cultural reasons. What will happen when I go to have my photo taken for biometrics?
+    - What will happen to my fingerprints and photo after they are collected for biometrics?
+    - How long will you keep my fingerprints and photo (biometrics) for visitor visa, or study or work permit applications?
+    - How long will you keep my fingerprints and photo (biometrics) for permanent residence applications?
+    - How long will you keep my fingerprints and photo (biometrics) for asylum claimants?
+    - What if I have a Canadian visa that has not yet expired when you start taking biometrics from citizens of my country or territory?
+    - Do I need to give my biometrics to visit Canada if I’m in the United States and I’ve already given my biometrics when I entered the U.S.?
+    - If I’m in Canada, do I have to give my biometrics?
+    - If my visa, work or study permit application is refused, will I have to give biometrics for my next application?
+    - Will it take longer to process my application because I have to give biometrics?
+    - Can I go to a port of entry to give biometrics if it’s closer than a Service Canada location?
+    - I am from Asia, Asia Pacific or the Americas and have applied for a visa, work or study permit, or for permanent residence before December 31, 2018, but my application is still being processed. Do I have to give my biometrics?
+    - How can I pay for biometrics after I submitted my application?
+    - They didn’t take my photo when I gave my biometrics in Canada. Will my application still be processed?
+    - I’m applying for a work or study permit from Saint-Pierre and Miquelon and need to give biometrics, but there is no service available where I live. What do I do?
+    - Who needs to give their fingerprints and photo (biometrics)
+    - When to give your fingerprints and photo
+    - How often you need to give your fingerprints and photo
+    - How to give your fingerprints and photo (biometrics)
+    - What are the tips or things to be kept in mind to get the best photos and fingerprints during your biometrics appointment
+    - Where to give your fingerprints and photo (biometrics)
+    - What happens when you arrive in Canada
 
-- intent: faqs/study_permit_question
+- intent: faqs/caregiver_program
   examples: |
-    - I've applied to extend my study permit. Can I travel outside Canada and be able to return?
-    - I’m waiting for my post-graduation work permit. Can I travel outside Canada and come back with my student visa?
+    - I want to work in Canada as a caregiver, but I don’t meet the requirements of the pilots. What are my options?
+    - What is the Caregiver Program for immigrating to Canada?
+    - Who is considered a caregiver in Canada?
+    - How much do caregivers earn in Canada?
+    - How to find caregiver jobs in Canada
+    - What is the requirement to maintain temporary resident status while working in Canada as a caregiver?
+    - What is "maintained status" in the context of work permits for caregivers in Canada?
+    - Can caregivers apply for permanent residence in Canada through specific pilot programs?
+    - Is the Live-in Caregiver Program (LCP) still open for new applicants in Canada?
+    - What options are available for caregivers who don't meet the requirements for permanent residence in Canada?
+    - What are the eligibility criteria for applying for a work permit in Canada as a caregiver through the Temporary Foreign Worker Program (TFWP) ?
+    - Are there any closed caregiver programs in Canada?
+    - I’m working in Canada as a caregiver but I don’t meet the requirements for the caregiver pilots. Can I apply to extend my work permit?
+    - An employer in Quebec has offered me a job as a caregiver. What do I apply for?
+    - Do I need to provide proof that I can pay the salary of the caregiver I’m hiring through the caregiver pilots?
+    - Do I have to pay for the caregiver’s travel costs if I’m hiring them through the caregiver pilots?
+    - I want to hire a caregiver with a live-in arrangement. What’s the maximum amount I can charge for room and board?
+    - What is an employment contract for a live-in caregiver?
+    - What rights do I have as a live-in caregiver under labour or employment laws?
+    - I am a live-in caregiver. What happens if I lose my job?
+    - My employer is moving to another province or territory. Do I need a new work permit or Labour Market Impact Assessment?
+    - Can I work for more than one employer at a time under the Live-in Caregiver Program?
+    - Can I change employers under the Live-in Caregiver Program?
+    - As a temporary worker, what can I do if my employer is treating me unfairly?
+    - Can my family come to Canada with me if I am a live-in caregiver?
+    - What is abuse?
+    - Can my employer deport me?
+    - I’m a live-in caregiver and I’m ready to apply for permanent residence. Can I apply for an open work permit?
+    - May I send my open work permit application and permanent residence applications separately?
+    - Do I need to extend my work permit while my permanent residence application is being processed?
+    - I applied for an open work permit and permanent residence. What if my current work permit expires?
+    - Will the time I worked under any work permit help me get permanent residence under the Live-in Caregiver Program?
+    - Who should I include on my permanent residence application?
+    - How many hours of work experience do I need as a Live-in Caregiver to apply for permanent residence?
+    - What is a complex permanent residence application for the Live-in Caregiver program?
+    - Who can apply for permanent residence through the Live-in Caregiver Program (LCP) in Canada?
+    - What are the requirements to become a permanent resident through the Live-in Caregiver Program in Canada?
+    - Can your work experience under the Live-in Caregiver Program be used for other caregiver pathways?
+    - What factors can affect your permanent residence application as a caregiver in Canada?
+    - Are there factors that cannot affect your permanent residence application as a caregiver?
+    - Is it possible to apply for an open work permit simultaneously with a permanent residence application for caregivers?
+    - What should you consider if you have a Live-in Caregiver Program work permit and are working in Quebec?
+    - What should you do if you leave Canada while your permanent residence application is in process?
 
-- intent: faqs/citizenship_question
+- intent: faqs/citizenship
+  examples: |
+    - What are the requirements for becoming a Canadian citizen?
+    - What is dual citizenship?
+    - Do I become a Canadian citizen when I marry a Canadian?
+    - I’m Canadian, but my child was born outside Canada. Are they Canadian?
+    - Can I count any time I’ve spent outside of Canada toward the physical presence requirement when applying for citizenship?
+    - Do I have to use the travel journal?
+    - If I’m applying for citizenship, do I still have to submit the physical presence calculation if I submit the travel journal?
+    - If I’m transferring through different countries at the airport, or by car or train, do I need to record it in my travel journal?
+    - How do I get more copies of the travel journal?
+    - What is a non-routine application?
+    - Can I get my citizenship application processed urgently?
+    - My citizenship application is being processed. How will the 2017 legislation changes affect my application?
+    - I hired a representative before June 11, 2015 and my citizenship application is still in process. Can they continue to act as my representative?
+    - Who can represent me on my citizenship application?
+    - How much does it cost to apply for Canadian citizenship?
+    - What is the fees for Canadian citizenship?
+    - I am a citizen of another country. Will I lose that citizenship if I become a Canadian?
+    - What photos do I need to include with my citizenship application?
+    - Can I leave Canada after I mail my citizenship application?
+    - What if I cannot attend my citizenship appointment with IRCC? Can I reschedule it?
+    - Where can I find out the status of my citizenship application and the processing time?
+    - What does my citizenship application status mean?
+    - How do I withdraw my application for citizenship services?
+    - What can I do if my citizenship application is refused?
+    - My citizenship application was returned to me. Do I have to recalculate my physical presence (time lived in Canada) before I resubmit it?
+    - Do I need to ask the Canada Border Services Agency for a history of entries when applying for citizenship?
+    - What happens if I check “Yes” on Question 14B (“Consent to the CBSA and IRCC”) on the application for citizenship?
+    - Can I submit an old version of the application form for Canadian citizenship?
+    - Who has to take the citizenship test?
+    - Is the citizenship test difficult?
+    - Does the study guide have sample questions to help me prepare for the citizenship test?
+    - When can I take my online citizenship test or retest?
+    - My application status says I’ve been scheduled for an online test. Why haven’t I received an invitation?
+    - Where can I find my online test invitation?
+    - In my invitation, the time between the online test “start date” and “end date” is not 21 days. What should I do?
+    - I need to take the online test again. How long will it take you to reschedule my test?
+    - I missed my online citizenship test. Can I reschedule it?
+    - Can I take the online test outside Canada?
+    - Can I take the online test in a public library or with a public computer?
+    - I signed in to the online test, but the page shows a “You can’t take the test right now” message. What should I do?
+    - I submitted a group or family application. How will we access the online test?
+    - What do I do if I get a “403 Error” message when I sign in to the online test?
+    - "When I sign in to the online test, why do I see a blank screen or a message that my browser isn’t supported?
+    - "
+    - Why do I have to sign in again when I get the online citizenship test link?
+    - "Do I have to start the online test immediately after I take a photo of myself?
+    - "
+    - Can I ask someone to help me sign in to the online test?
+    - What if I decline the privacy notice for the online test?
+    - What if I don’t agree with the terms and conditions of the online test?
+    - I clicked the “Email me the test link” button but don’t get the online test link. What should I do?
+    - What do I do if my online test link expires?
+    - Will I get the online test link if I have a representative?
+    - I got disconnected during the online test. Can I use the same test link to return to the test?
+    - I accidentally clicked the “Resend the test link” button. Do I have to use the new online test link?
+    - "My webcam isn’t working and can’t connect to the online test system. What should I do?
+    - "
+    - My webcam is working, but it can’t connect to the online test system. What should I do?
+    - During the online test, my webcam shows a black or static image. What should I do?
+    - "What kinds of photos do you need from me for the online test?
+    - "
+    - What should I do if I can’t retake the photos for my online test?
+    - "Can I retake my online test photo (of my ID or myself) after I approve it?
+    - "
+    - What should I do if the online test photo of my personal identification (ID) or face is unclear?
+    - "I took a picture of my face instead of my personal identification (ID) for the online test. What should I do?
+    - "
+    - Do I have to download the online test photos that I take of my ID and myself?
+    - When do I get my official online test result?
+    - I got disconnected and can’t see my online test result. What should I do?
+    - Do I get a confirmation email after I complete the online test?
+    - I forgot to print or email the online test result to myself. How do I get my test result?
+    - Do I have to report my online test result to Immigration, Refugees and Citizenship Canada (IRCC)?
+    - What are my next steps after taking the online test?
+    - I’ve completed the online test, but my application status is outdated. What should I do?
+    - Why did I get another test invitation after I passed the online test?
+    - I’m taking the online test with Microsoft Teams. Who do I contact if I need help?
+    - What do I do if I’m disconnected during the online test?
+    - I clicked the “Exit” button or closed the page by mistake during the online test. What do I do?
+    - What personal information do you collect for the online test?
+    - After I apply for citizenship, how long will it be before I can take the test?
+    - What if I cannot attend my citizenship appointment with IRCC? Can I reschedule it?
+    - Can I bring my child to the in-person citizenship test?
+    - What should I do if I missed my citizenship test?
+    - When do I know if I passed the citizenship test?
+    - What happens if I fail the citizenship test?
+    - How long will I wait between my citizenship test and the ceremony?
+    - Can I bring my child to the citizenship ceremony?
+    - How do you measure how well I can speak English or French when applying for citizenship?
+    - What language level do I need when I apply for citizenship?
+    - What documents can I use to prove that I meet the citizenship language requirement?
+    - What third-party language tests will you accept as proof I have adequate knowledge of English or French when I apply for citizenship?
+    - I graduated from an English-or French-language high school/college/university. What can I use to show that I can communicate in one of the official languages when I apply for citizenship?
+    - Can I use the government-funded language program I took to prove that I meet the citizenship language requirement?
+    - Can I provide my LINC/CLIC placement test as a proof that I meet the citizenship language requirement?
+    - I’ve lost my certificate or transcript showing I meet the citizenship language requirement. What can I do?
+    - Can I submit the results from a third-party language test that I took when I first applied to immigrate to Canada as proof I meet the citizenship language requirement?
+    - Do you accept certificates from private language schools as proof I meet the citizenship language requirement?
+    - How can I apply for a citizenship certificate or search of citizenship records?
+    - When and how do I apply urgently for a citizenship certificate?
+    - Can I update my application for a citizenship certificate?
+    - When and how do I apply urgently for a search of citizenship records?
+    - How can I apply for a citizenship certificate or search of citizenship records?
+    - I live abroad and applied online. How will I get my citizenship certificate?
+    - How do I get a citizenship certificate (proof of citizenship) for someone under 18 years old?
+    - How do I fill out my application for a citizenship certificate if I don’t know everything about my parents or grandparents?
+    - For my citizenship certificate application, can I provide documents that aren’t in English or French?
+    - What documents should I send with my application for a citizenship certificate (proof of citizenship)?
+    - My citizenship certificate was mailed to me, but I never received it. What do I do?
+    - I legally changed my name. How do I change the name on my citizenship certificate or card?
+    - I want to replace or update my citizenship certificate. What do I do with my current certificate?
+    - I want to replace or update my citizenship certificate. What should I do if I have an electronic citizenship certificate (e-certificate)?
+    - I want to replace or update my citizenship certificate. What should I do if I have a paper citizenship certificate or citizenship card?
+    - What should I do if I've lost my citizenship card/certificate and want to replace it?
+    - How can I replace my citizenship certificate if there's a mistake on it?
+
+- intent: faqs/contact_us
   examples: |
     - How can I get help with my immigration or citizenship application?
+    - How long will it take to process my application?
+    - How can I update or ask about an IRCC application in progress?
+    - How can I check the status of my application?
+
+- intent: faqs/destination_canada
+  examples: |
+    - What do I need to work in Canada?
+    - How much does it cost to attend the Destination Canada event?
+    - Who participates in the Destination Canada event?
+
+- intent: faqs/document_change_gender
+  examples: |
+    - How do I change the sex or gender identifier on my application or document?
+    - Do I need to notify IRCC of a change of sex or gender identifier?
+    - Do I have to be a Canadian citizen to change the sex or gender identifier on my document?
+    - Will changing the gender identifier on my documents affect the decision on my application?
+    - Can I apply to change both my name and gender identifier at the same time on my documents?
+
+- intent: faqs/downloading_files
+  examples: |
+    - How can I view a PDF form provided by IRCC?
+    - How can I download and open a PDF form from IRCC's website?
+    - What can I do if I can't open my application form in PDF format?
+    - What does a "Bad Encrypt Dictionary" error mean when opening a PDF?
+    - Why does nothing happen after clicking the "Validate" button on my application form?
+    - How can I correct the language of the calendar in PDF forms?
+
+- intent: faqs/electronic_travel_authorization
+  examples: |
+    - I have not been able to submit an eTA application because of technical issues (i.e. with payment or the application form). Can I still fly to Canada?
+    - I submitted an eTA application, but have not received any emails from IRCC. Can I still travel to Canada?
+    - I got an email confirmation from IRCC that my eTA application was received, but nothing since then. Can I still travel to Canada?
+    - I cannot submit the additional documents required for my eTA application by the requested deadline. Can I still travel to Canada?
+    - I submitted the documents for my eTA application but I haven’t heard anything yet. Can I still travel to Canada?
+    - My application for an eTA was refused. Can I still travel to Canada?
+    - What is a visa-exempt foreign national?
+    - Will the eTA application information be available in multiple languages?
+    - Are there any age exemptions for eTA?
+    - I will transit by air through Canada. Do I need an eTA?
+    - I am a permanent resident of Canada. Do I need an eTA if I leave and want to return to Canada by air?
+    - I am a permanent resident of Canada. Can I apply for an eTA?
+    - I am an American citizen. What do I need to enter Canada?
+    - I am a NEXUS or CANPASS member and U.S. green card holder. Do I need an eTA to fly to Canada?
+    - I am a lawful permanent resident of the U.S. (green card holder). Do I need an eTA?
+    - I am a lawful permanent resident of the U.S. (green card holder) and my home country will not issue a passport to me. Can I apply for an eTA using a document other than a passport?
+    - I have a visa or a temporary resident permit to enter Canada. Do I need an eTA too?
+    - I am visiting the U.S. and I want to come to Canada. Do I need an eTA?
+    - I have an ESTA and I am visiting the U.S. Can I use my ESTA to enter Canada?
+    - I am from a visa-exempt country and want to apply for a study or work permit. Do I need to apply for an eTA?
+    - what If i apply for an initial work or study permit before you travel to Canada?
+    - what If i plan to apply for an initial work or study permit at a Canadian port of entry?
+    - I am from a visa-exempt country and a study or work permit. Do I need to apply for an eTA?
+    - I am a lawful permanent resident of the United States and have a study or work permit. Do I need to apply for an eTA?
+    - I am from a visa-exempt country and want to study in Canada for less than six months. Do I need an eTA?
+    - I am a dual citizen of the U.S. and another country. Do I need an eTA?
+    - I am a Canadian citizen. Do I need an eTA to enter Canada?
+    - I am a Canadian citizen and a citizen of another country. Can I fly to Canada with my non-Canadian passport?
+    - Can I apply for an eTA with a Refugee Travel Document?
+    - I have committed an offence and suspect or know that I am inadmissible to Canada. Should I still apply for an eTA?
+    - I have been refused entry to Canada in the past. Does this mean that I will be refused an eTA?
+    - Can a business or agency organizing charter flights to Canada for tour groups get eTAs for their clients?
+    - Do travellers on chartered aircrafts need an eTA?
+    - Do VIPs, Heads of State or diplomats need an eTA to travel to Canada?
+    - Can diplomats who are not accredited in Canada, but accredited elsewhere, travel to Canada without an eTA?
+    - I live in St. Pierre and Miquelon and am a citizen of France. I want to travel to Canada by air. Do I need an eTA?
+    - I live in St. Pierre and Miquelon and am a citizen of a country other than France. I want to travel to Canada by air. Do I need an eTA?
+    - I live in St. Pierre and Miquelon and am a citizen of France returning to St. Pierre and Miquelon by air from a country other than Canada. Do I need an eTA?
+    - When I visit Canada, I want to travel to St. Pierre and Miquelon by air. What document(s) do I need to return to Canada?
+    - I have a Confirmation of Permanent Residence (CoPR) and will travel to Canada. Do I need an eTA?
+    - How do I apply for an eTA for travel to Canada?
+    - I see other websites advertising that I can apply for an eTA with them. Is there more than one website to apply for an eTA?
+    - What type of information do I need to complete an eTA application?
+    - Can I apply for an eTA for my child?
+    - Can I help a friend or family member apply for an eTA?
+    - As a Canadian citizen living in Canada, can I apply for an eTA for my non-Canadian relative or friend who lives abroad?
+    - Can more than one person, including dependents, be included in an eTA application?
+    - Can I submit a group application for eTA?
+    - Can I use my email address when I apply for an eTA on behalf of someone?
+    - Can I start my eTA application and save it?
+    - Can I review my eTA application before I submit it?
+    - What happens if I made a mistake (like an email address or passport number) on my eTA application?
+    - Can I apply for an eTA using a document other than a passport?
+    - What options are available to pay the eTA application fee?
+    - What if I don’t have a Visa, Mastercard or American Express? Are there other methods to pay for an eTA?
+    - Do I have to apply for an eTA each time I travel to Canada?
+    - I must travel to Canada for exceptional circumstances. Can I get my eTA on an urgent basis?
+    - Will IRCC email me when my eTA is approved?
+    - What information will I get by email after I apply for an eTA?
+    - Why am I not receiving any emails from IRCC about my eTA application?
+    - How long will it take to process my eTA application?
+    - I applied for an eTA on a different website. How do I verify if I have a real eTA?
+    - I have been charged more than $7 CAD for my eTA on another website. I think I have been scammed. How can I find out and can I get a refund?
+    - I have to submit documents for my eTA application. How can I find out what documents I need to provide?
+    - I need to submit documents in a secure IRCC account for my eTA application. How can I do this?
+    - What do I do if my application for an eTA is not approved right away?
+    - Do I have to print anything to prove that I have an eTA?
+    - Can I withdraw my eTA application?
+    - If my eTA is cancelled after I get one, can I travel?
+    - What happens if I get a new passport after I have received an eTA?
+    - My application for an eTA was refused. Can I get a refund? 
+    - My application for an eTA was refused. Is there a way I can appeal?
+    - Does having an eTA automatically mean that I am allowed to enter Canada?
+
+- intent: faqs/express_entry
+  examples: |
+    - Can I have more than one Express Entry profile?
+    - In my online profile or application I am getting validation errors or it tells me that fields are incomplete when they are not. What do I do?
+    - Do I need an Educational Credential Assessment to apply under Express Entry?
+    - The online tool said I was eligible for Express Entry, but my completed profile says I’m not. Which one is right?
+    - Can I use my existing Job Bank account to get matched with employers for Express Entry?
+    - My personal reference code is not working. What should I do?
+    - What do I need to create an Express Entry profile?
+    - I am a native English or French speaker. Why do I need to take a language test for Express Entry?
+    - What kind of language test can I use for Express Entry?
+    - A message in my account says my profile was updated. I didn’t update it today (or don’t see an update). What happened?
+    - I accidently withdrew my Express Entry profile. How can I fix this?
+    - I was found not eligible for Express Entry and I can’t change my profile. What do I do?
+    - How do I update my Express Entry profile before submitting it?
+    - How do I confirm that my Express Entry profile is complete?
+    - I already submitted my Express Entry profile. Can I still update it?
+    - Where can I find my Express Entry profile number and/or Job Seeker validation code?
+    - How do I withdraw my Express Entry profile?
+    - In an Express Entry profile, should I only include the minimum work experience needed to qualify for one of the programs, or should I include more?
+    - In an Express Entry profile, what do you mean by the “date the applicant first became qualified to practise this occupation?
+    - How do I get education points for Express Entry if I have 2 or more degrees or diplomas?
+    - If my Express Entry profile expires, will the system keep my information?
+    - Can I be eligible for more than one program under Express Entry?
+    - Can I be invited to apply if I've lost my username or password?
+    - Do I need a permanent job offer for Express Entry?
+    - What do you mean by Primary Occupation?
+    - How do I find my National Occupation Classification (NOC) code?
+    - Why didn’t I get points for my job offer in Express Entry?
+    - I am working in Canada on a valid work permit. Does this count as a job offer?
+    - There is no National Occupation Classification (NOC) code on my work permit. What should I put in my Express Entry profile?
+    - If I am waiting for a new work permit and I have job offer points, do I have to remove the job offer from my Express Entry profile?
+    - What work experience can I count towards the Federal Skilled Trades Program’s two-year requirement?
+    - Can I count student work experience toward the Express Entry work requirement?
+    - I have been working in Canada for the last 6 months but didn’t get points for work experience. Why not?
+    - If I’ve maintained my status while in the Express Entry pool, will I still get the job offer points?
+    - What if I am invited to apply for Express Entry while waiting for a new work permit?
+    - I was invited to apply through Express Entry but my work permit expired. What do I do?
+    - I didn’t get a Job Seeker Validation Code in the message you sent to my account. Why not?
+    - Do I need a job offer to get into the Express Entry pool?
+    - How do I register with / create a Job Match account in Job Bank?
+    - What is a personal document checklist?
+    - What is a personal reference code?
+    - Who can I contact if I have questions about GCKey or Sign-In Partner?
+    - How do I get a GCKey credential?
+    - What do I do if I lost my GCKey username or password?
+    - I recently reset my IRCC secure account, but I don’t see my application. How can I get it back?
+    - How do I upload more supporting documents after I have already submitted my online application for permanent residence through Express Entry?
+    - Who is a federal skilled worker?
+    - What is arranged employment under the Federal Skilled Worker Program?
+    - What are the minimum requirements to apply as a federal skilled worker?
+    - How do I find my Canadian Language Benchmark (CLB) level with my test results?
+    - If I do not meet the language threshold in one of the four skill areas, can I still submit an Express Entry profile?
+    - What is the pass mark for the federal skilled worker selection grid?
+    - Can I be chosen to apply for permanent residence as a federal skilled worker if I am 47 years old or over?
+    - The employer I work for temporarily in Canada wants to offer me a full-time job. Will I need a new LMIA for Express Entry?
+    - I work in Canada on an LMIA-exempt work permit. How do I get job offer points for Express Entry?
+    - I am working in Canada on a post-graduation work permit. Do I need a Labour Market Impact Assessment?
+    - How can I get the most possible points for the Adaptability factor under the Federal Skilled Worker program?
+    - Can I count my work as a teaching assistant toward the work experience requirement?
+    - Can I re-use my Educational Credential Assessment (ECA) report to submit my Express Entry profile?
+    - What are the language requirements for the Federal Skilled Worker Program?
+    - Are any Federal Skilled Worker immigration applicants exempt from the mandatory language test?
+    - How does a third-party language test help me with my immigration process?
+    - Where can I take a third-party language test for my immigration application?
+    - How can I immigrate to the province of Quebec as a skilled worker?
+    - Do I need an Educational Credential Assessment (ECA) to apply as a federal skilled worker?
+    - Where can I get an educational credential assessment (ECA)?
+    - Does an Educational Credential Assessment (ECA) mean that I can be licensed in a regulated profession?
+    - How much does an Educational Credential Assessment (ECA) cost, and how long does it take to get one?
+    - How long is an Educational Credential Assessment (ECA) report valid for?
+    - What credential should I get assessed for immigration purposes?
+    - Am I eligible to apply as a permanent resident under the Canadian Experience Class?
+    - How do I apply to immigrate if I have work experience in Canada?
+    - Who cannot apply for permanent residence under the Canadian Experience Class?
+    - Can I complete an Express Entry profile before I have a year of work experience?
+    - If I worked or studied in Canada illegally, can I use that experience in my Canadian Experience Class application?
+    - Do I need a medical exam to apply for permanent residence, if I’ve already had one for my permit?
+    - Can I apply under the Canadian Experience Class if I am currently living in Quebec and I plan to live elsewhere in Canada?
+    - Can I renew my post-graduation work permit?
+    - Do skilled temporary foreign workers need a certain education level to apply for permanent residence?
+    - Can I still be eligible for Canadian Experience Class if I have returned to my country?
+    - What are the language requirements I need to meet in order to apply for permanent residence under the Canadian Experience Class?
+    - I graduated a while ago, then earned one-year of work experience and now I am back in school. Can I apply for permanent residence under the Canadian Experience Class?
+    - I am currently studying in Canada. Can I immigrate permanently?
+    - I am from an English-speaking country. Do I still need to provide proof of language ability to apply under the Canadian Experience Class?
+    - I have a PhD and am in a post-doctoral program. Do I qualify for the Canadian Experience Class?
+    - What kind of work experience do I need to apply for permanent residence under the Canadian experience class?
+    - Can I count both high-skilled and low-skilled experience toward the work experience required to apply under the Canadian Experience Class?
+    - Can I count experience I got in Canada while waiting for a decision on my refugee application?
+    - Can I count part-time work toward the work experience requirement?
+    - While working under a post-graduate work permit to get experience to qualify for the Canadian Experience Class, can I switch employers?
+    - How much work experience do I need to be eligible for the Canadian Experience Class?
+    - Does the one year of work experience to qualify under the Canadian Experience Class include non-paid employment? Is there a minimum wage requirement for qualifying employment?
+    - Are any Federal Skilled Worker immigration applicants exempt from the mandatory language test?
+    - What are the language requirements for the Federal Skilled Trades Program?
+    - What language test do I need for Express Entry?
+    - What is a certificate of qualification for the Federal Skilled Trades Program?
+    - How can I get a certificate of qualification from a provincial, territorial or federal body for the Federal Skilled Trades Program?
+    - How can I qualify for the Federal Skilled Trades Program if the province or territory where I plan to live and work does not give Certificates of Qualification in my trade?
+    - What is a qualifying job offer for the Federal Skilled Trades Program?
+    - If I come to Canada under the Federal Skilled Trades Program, will I be qualified to work in any province or territory?
+    - How do I get points for a provincial nomination under Express Entry?
+    - I have a nomination certificate from a province or territory. How do I apply through Express Entry?
+    - Why are the requirements for provincial nominees different under Express Entry?
+    - When I try to submit my Express Entry profile or my application, I get an error. What can I do?
+    - Can I ask to only be considered for one of the programs under Express Entry?
+    - What happens if a country has special procedures for getting police certificates?
+    - Do I need to include proof of funds for Express Entry?
+    - I am in the Express Entry pool. How do I find out what programs I am eligible for?
+    - I’m in the Express Entry pool. How can I look for a job in Canada?
+
+- intent: faqs/immigrating
+  examples: |
+    - Am I eligible to apply as a permanent resident under the Canadian Experience Class?
+    - How do I apply to immigrate if I have work experience in Canada?
+    - Who cannot apply for permanent residence under the Canadian Experience Class?
+    - Can I complete an Express Entry profile before I have a year of work experience?
+    - If I worked or studied in Canada illegally, can I use that experience in my Canadian Experience Class application?
+    - Do I need a medical exam to apply for permanent residence, if I’ve already had one for my permit?
+    - Can I apply under the Canadian Experience Class if I am currently living in Quebec and I plan to live elsewhere in Canada?
+    - Can I renew my post-graduation work permit?
+    - Who is a federal skilled worker?
+    - What is arranged employment under the Federal Skilled Worker Program?
+    - What are the minimum requirements to apply as a federal skilled worker?
+    - How do I find my Canadian Language Benchmark (CLB) level with my test results?
+    - If I do not meet the language threshold in one of the four skill areas, can I still submit an Express Entry profile?
+    - What is the pass mark for the federal skilled worker selection grid?
+    - Can I be chosen to apply for permanent residence as a federal skilled worker if I am 47 years old or over?
+    - The employer I work for temporarily in Canada wants to offer me a full-time job. Will I need a new LMIA for Express Entry?
+    - I work in Canada on an LMIA-exempt work permit. How do I get job offer points for Express Entry?
+    - I am working in Canada on a post-graduation work permit. Do I need a Labour Market Impact Assessment?
+    - How can I get the most possible points for the Adaptability factor under the Federal Skilled Worker program?
+    - Can I count my work as a teaching assistant toward the work experience requirement?
+    - Can I re-use my Educational Credential Assessment (ECA) report to submit my Express Entry profile?
+
+- intent: faqs/immigration_fraud_scam
+  examples: |
+    - I received a call from an immigration officer. Was it a scam?
+    - I received an email from an immigration officer. Is it a scam?
+    - How can I tell if an immigration website is a scam?
+    - How do I report a scam or a fraud?
+    - I received an email with a link asking me to provide my banking information. Is it a scam?
+    - What happens if I owe IRCC money? Will you call to ask for unpaid fees?
+    - How do I pay online if I don’t have a credit card or a bank account?
+    - If I have not paid my fees, will you have me arrested or deported?
+    - Will you ask me for personal information over the phone?
+    - I received threats from someone who says they are from the immigration department. Is it a scam?
+    - I received a call from an immigration officer. Was it a scam?
+
+- intent: faqs/immigration_representatives
+  examples: |
+    - Do I need a representative to help me apply?
+    - Will my case be processed more quickly if I hire a representative?
+    - What services will the representative provide and what are the fees for these services?
+    - What could happen if I do not tell Immigration, Refugee and Canada Citizenship (IRCC) I paid an immigration representative?
+    - Is it legal to provide false information on my immigration or citizenship application, if a representative advises me to do so?
+    - If I apply through a provincial program, do these representative regulations apply?
+    - If I change my representative, do I have to tell Immigration, Refugees and Citizenship Canada (IRCC)?
+    - What should I do if Immigration, Refugee and Canada Citizenship (IRCC) returns my application, saying my representative is not authorized?
+    - What should I do if my immigration representative and I have a disagreement?
+    - Do I need to use an immigration representative for my citizenship application?
+    - Do I need to pay someone to represent me on my citizenship application?
+    - What is a party ID?
+    - I’m a representative (or designated person). Why can’t I create an account in the application status tracker or citizenship tracker?
+    - I’m a representative/designated person. Why can’t I get my party ID?
+    - Why can’t I see some of my client files in the permanent residence or citizenship tracker?
+
+- intent: faqs/inadmissibility
+  examples: |
+    - What does criminally inadmissible mean?
+    - Can I enter Canada if I am criminally inadmissible?
+    - What is the temporary resident permit fee waiver for criminal inadmissibility?
+    - As an inadmissible person, can I enter Canada more than once without paying the fee?
+    - I was only convicted of a misdemeanour. Why can’t I enter Canada?
+    - How can I find out whether an offence outside Canada is considered a criminal offence in Canada?
+    - I was charged with a crime in another country and found not guilty. Can I enter Canada?
+    - I received a pardon for my crime. Can I enter Canada?
+    - I was convicted of driving while impaired by alcohol or drugs. Can I enter Canada?
+    - I have been charged with a crime outside of Canada and my trial is still underway. Can I enter Canada?
+    - I am currently on parole. Can I enter Canada?
+    - What does it mean to be rehabilitated in respect to entering Canada?
+    - How long will it take to get a decision on my individual rehabilitation application?
+    - What is the processing fee for an individual rehabilitation application?
+    - If my individual rehabilitation application is refused, will I get my processing fee back?
+    - When can I apply for individual rehabilitation?
+    - What can I do if I want to come to Canada but do not qualify for rehabilitation?
+
+- intent: faqs/information_privacy
+  examples: |
+    - What information is available under the Access to Information Act and Privacy Act?
+    - Who can make a request under the Access to Information Act?
+    - Who can make a request under the Privacy Act?
+    - Will my access to information or privacy request be processed faster if my representative sends it?
+    - What is the fee for an Access request?
+    - What is the fee for a Privacy request?
+    - How and where do I submit an Access to Information or Privacy request?
+    - How long does the Department have to respond?
+    - Can I get personal information about someone else?
+    - Can I get personal information about someone who is deceased?
+    - How can I get information on an individual who arrived in Canada before 1936?
+    - What information should I provide to get a naturalization record?
+    - Can non-residents of Canada who are conducting genealogical research access family records held by Immigration, Refugees and Citizenship Canada?
+    - I sponsored a family member who resides outside of Canada, and they applied for permanent residence at a visa office overseas. Can I obtain information on that file?
+
+- intent: faqs/interim_federal_health_program
+  examples: |
+    - What is the Interim Federal Health Program?
+    - What coverage do I get through the Interim Federal Health Program?
+    - I need help with my mental health. Does the Interim Federal Health Program cover it?
+    - Which documents prove I’m eligible for the Interim Federal Health Program?
+    - When does my Interim Federal Health Program coverage start and when does it end?
+    - How do I get health-care services or treatment through the Interim Federal Health Program?
+    - I am covered under the Interim Federal Health Program. Why did my health-care provider ask me to sign a form after I was treated?
+    - Why did I get a letter from Medavie Blue Cross after I had health services that were covered by the Interim Federal Health Program?
+    - Do I have to get certain vaccinations before I arrive in Canada?
+    - How do I register as a health-care provider with the Interim Federal Health Program?
+    - How do I check patient eligibility for the Interim Federal Health Program?
+    - How long does it take for a patient’s Interim Federal Health Program eligibility to show in the Medavie Blue Cross system?
+    - Does the Interim Federal Health Program provide coverage for mental health services?
+    - What components should be included in a physician's letter indicating a diagnosis and referral for assessment, psychotherapy, or counseling therapy?
+    - How many counselling sessions are clients entitled to once prior approval is received?
+    - What types of psychotherapeutic services are explicitly excluded from coverage under the IFHP, and can you provide reasons for these exclusions?
+    - Does the Interim Federal Health Program cover interpretation services for mental health therapy?
+    - What are the fee rates paid to health-care providers with the Interim Federal Health Program?
+    - As a health-care provider, can I ask Interim Federal Health Program clients to pay for a service?
+    - Does the Interim Federal Health Program offer co-payment arrangements with other insurance plans or programs?
+    - Can I register with the Interim Federal Health Program (IFHP) as a pre-departure medical services health-care provider?
+    - How do I check that a patient is eligible for pre-departure medical coverage?
+    - Can I provide pre-departure vaccination services covered by the Interim Federal Health Program (IFHP)?
+    - What are the fee rates paid to health care providers registered with the Interim Federal Health Program (IFHP) who deliver pre-departure medical services?
+    - As a registered pre-departure medical services provider, can I ask eligible clients to pay for services covered by the Interim Federal Health Program (IFHP)?
+
+- intent: faqs/international_experience_canada
+  examples: |
+    - Who can participate in International Experience Canada?
+    - What kinds of jobs can I have with an International Experience Canada work permit?
+    - Do I need a job offer to submit my International Experience Canada profile?
+    - Can I participate in International Experience Canada more than once?
+    - I’ve reached the maximum number of participations for my country or category in IEC. If I get an invitation to apply, can I participate in the program again?
+    - I’m almost too old for International Experience Canada. Can I still apply?
+    - Can I immigrate to Canada through International Experience Canada?
+    - Is it possible to study in Canada while participating in IEC?
+    - Can I have both a study permit and a work permit under International Experience Canada?
+    - What’s the difference between an International Experience Canada work permit and other work permits?
+    - Can I travel with a specific person for International Experience Canada?
+    - Can I apply to International Experience Canada and Express Entry at the same time?
+    - If I’m a dual citizen, can I have an International Experience Canada work permit under each citizenship?
+    - I participated in IEC in the past. How do I apply to participate again?
+    - My International Experience Canada application was approved, but I didn’t go to Canada. Does that count as a participation?
+    - Do I have to apply online for my International Experience Canada work permit or can I apply by mail or in person?
+    - How long does it take to get an International Experience Canada invitation to apply?
+    - Candidates using a recognized organization
+    - Candidates in the Working Holiday pool will be randomly selected to apply for a work permit. What does that mean?
+    - You asked me for a new document. How do I submit it?
+    - I have a question about a document I am asked to submit in my online account. Who can I ask?
+    - Why do I need to get a police certificate?
+    - How do I give my fingerprints and get an RCMP criminal record check from inside or outside Canada?
+    - How can I find a doctor to do my immigration medical exam?
+    - What do I do if I get a new passport after I apply for International Experience Canada?
+    - If your profile is still in the pool
+    - There is a mistake in my name on my work permit, can you fix it?
+    - My International Experience Canada application was refused because I didn't provide a document. What should I do?
+    - Will my spouse or common-law partner get a work permit under International Experience Canada to come with me?
+    - Why do I need an offer of employment number if I’m applying for a Working Holiday work permit?
+    - What is a port of entry (POE) letter?
+    - When you arrive in Canada
+    - How long is my POE Letter valid?
+    - International Experience Canada participants only
+    - If I don’t use my letter of introduction for International Experience Canada, will I get a refund?
+    - I have lost, deleted or damaged my POE Letter. What should I do?
+    - My passport was lost or stolen after I received my Port of Entry (POE) Letter. Will my POE Letter need to be modified?
+    - I can't get a bank statement before I come to Canada. What do I do?
+    - Can I come to Canada before I receive my POE Letter?
+    - What type of insurance do I need for International Experience Canada?
+    - My IEC work permit application was approved, but I don’t want to work yet. Can I enter Canada as a visitor for now?
+    - Can I extend my International Experience Canada work permit?
+    - What should I do if my employer wants me to continue working after my International Experience Canada work permit expires?
+    - What should I do if my employer wants me to continue working after my International Experience Canada work permit expires?
+    - Can I change employers if I have an International Experience Canada work permit?
+    - Can I stay in Canada as a tourist after my work permit expires?
+    - My IEC work permit is expiring. Can I stay in Canada if I apply to extend my stay?
+    - How to maintain your status
+    - Who doesn’t maintain their status
+    - Who can work while waiting for a decision
+    - How much does it cost to participate in International Experience Canada?
+    - Can I get a refund if I cancel my International Experience Canada work permit application?
+    - How do I get a refund for International Experience Canada?
+    - Who can I contact if I have questions about GCKey or Sign-In Partner?
+    - How do I get a GCKey credential?
+    - What do I do if I lost my GCKey username or password?
+    - I recently reset my IRCC secure account, but I don’t see my application. How can I get it back?
+    - I’m having technical issues. My invitation to apply for a work permit expires soon. What do I do?
+    - How can I prove I’m a resident of a country when applying to International Experience Canada (IEC)?
+    - Do I have to answer the eligibility questions before I submit a profile?
+    - What is a personal reference code and how do I get one for International Experience Canada (IEC)?
+    - My personal reference code for International Experience Canada (IEC) is not working. What should I do?
+    - In my online profile or application I am getting validation errors or it tells me that fields are incomplete when they are not. What do I do?
+    - I accidently withdrew my International Experience Canada profile. How can I fix this?
+    - I was found not eligible for International Experience Canada (IEC). What do I do?
+    - I already submitted my International Experience Canada (IEC) profile. Can I update it?
+    - How do I withdraw or delete my International Experience Canada profile?
+    - I can't submit a new International Experience Canada profile because I already have one. What do I do?
+
+- intent: faqs/leaving_returning_canada
+  examples: |
+    - How do I validate a Confirmation of Permanent Residence or a permanent resident visa if I live in Canada?
+    - I have a visitor visa. Can I leave Canada and come back?
+    - I need to leave Canada and I do not have a permanent resident card. Can I later return to Canada without a PR card?
+    - I am outside Canada and do not have a PR card. How can I return to Canada?
+    - As a foreign student, can I return home or travel outside Canada while studying?
+    - Can I leave and come back to Canada if I have a work permit?
+    - I've applied to extend my study permit. Can I travel outside Canada and be able to return?
+    - I’m waiting for my post-graduation work permit. Can I travel outside Canada and come back with my student visa?
+    - I got a new passport but I have a valid visa in my old one. Can I use the visa in my old passport?
+
+- intent: faqs/link_application_online_account
+  examples: |
+    - Which applications can I link to an IRCC secure account?
+    - Why was I locked out of my IRCC secure account when I tried to link an application?
+    - When trying to link my application to my IRCC secure account, it says there are no matches. What’s going on?
+    - What happens after I link an application to an IRCC secure account?
+
+- intent: faqs/permanent_residents
+  examples: |
+    - How do I renew my permanent resident card?
+    - How long will it take to process my PR card?
+    - How can I get a permanent resident card?
+    - What should I do if my PR card has been lost, stolen or destroyed?
+    - What happens if my PR card expires?
+    - I am a new permanent resident of Canada. Do I need to apply for a permanent resident card?
+    - How do I pay the fee for my permanent resident card?
+    - What should I do if my new permanent resident card has a mistake or something is missing?
+    - How much does a permanent resident card cost?
+    - Should I submit photos with my PR card application?
+    - If I am granted citizenship, what happens to my permanent resident card?
+    - How can I avoid delays or refusals in processing my permanent resident card application?
+    - Who can apply for a permanent resident card?
+    - If you did not get your PR card before six weeks have passed
+    - I legally changed my name. How do I update my PR card?
+    - I have reclaimed my Indigenous name. How do I update my PR card?
+    - Can I travel outside Canada without my PR card?
+    - Can my time abroad count toward my permanent resident status?
+    - What do I do if my PR card isn’t ready before I travel?
+    - What happens if my permanent resident card expires while I am outside Canada?
+    - Can I get my permanent resident card processed urgently?
+    - How do I prove that I need urgent processing for my permanent resident card application?
+    - How can I check the status of my application?
+    - How long will it take to process my application?
+    - How long must I stay in Canada to keep my permanent resident status?
+    - Can I lose my permanent resident status?
+    - Can I give up my permanent resident status?
+    - Why would I give up my permanent resident status?
+    - What is the difference between the Change of Address and the Address Notification online services?
+    - What does the immigration category on my Confirmation of Permanent Residence document mean?
+    - How can I determine whether I can apply for permanent residence?
+    - If I am granted citizenship, what happens to my permanent resident card?
+    - My family and I applied for permanent residence. Why can’t I see the application status?
+    - Which family members can come with me to Canada when I immigrate?
+    - What’s the pilot project to improve the family reunification process for protected persons?
+    - Am I eligible to apply to the pilot project for my dependent family members living outside Canada?
+    - What regions are included in the pilot project to improve the family reunification process for protected persons?
+    - What should I do if I’m eligible for the protected persons family reunification pilot, but I can’t find my dependent family members, or they don’t want to come to Canada?
+
+- intent: faqs/port_entry_letter
+  examples: |
+    - What is a port of entry (POE) letter?
+    - How long is my POE Letter valid?
+    - How long is my POE Letter valid for International Experience Canada participants?
+    - I have lost, deleted or damaged my POE Letter. What should I do?
+
+- intent: faqs/refugees
+  examples: |
+    - Who can sponsor a refugee?
+    - Who is eligible for sponsorship under the Private Sponsorship of Refugees Program?
+    - Who decides if a refugee can be sponsored?
+    - Who decides if a refugee can be resettled?
+    - How does Immigration, Refugees and Citizenship Canada decide whether a refugee can be sponsored and resettled?
+    - Who cannot be sponsored under the Private Sponsorship of Refugees Program?
+    - What are the responsibilities of a sponsoring group?
+    - Who identifies refugees for sponsorship?
+    - What is the Joint Assistance Sponsorship (JAS) Program?
+    - Which visa office processes applications for permanent residence for privately sponsored refugees?
+    - How long does it take before a privately sponsored refugee gets to Canada?
+    - The refugee our group wanted to sponsor was refused after an interview. Can we appeal?
+    - Where can I find more information about applying to sponsor a refugee?
+    - I know someone who claimed refugee status here in Canada and was refused. Can we sponsor him or her?
+    - The UNHCR accepted my relatives as refugees. Does that mean they will be resettled in Canada?
+    - Are there any fees for applying to sponsor a refugee?
+    - Will the refugee have to pay any costs?
+    - Are sponsored refugee families with children eligible for a child tax benefit when they arrive?
+    - Are resettled refugees allowed to go to university?
+    - Can resettled refugees apply for student loans?
+    - Are there different rules if I want to sponsor a refugee from Turkey?
+    - What kinds of help do privately sponsored refugees get?
+    - How does the Blended Visa Office-Referred Program work?
+    - How is the Blended Visa Office-Referred Program different from the regular Private Sponsorship of Refugees Program?
+    - Can refugees be referred to the Blended Visa Office-Referred Program by sponsoring groups?
+    - "When I sponsor a refugee, do I need to include family members who aren’t coming to Canada at the same time on the application?
+    - What can I do if I can’t find refugees I want to sponsor through the BVOR program?
+    - You approved my refugee sponsorship more than 10 weeks ago. What should I do if you haven’t contacted me yet?
+    - How long does it take a refugee to get to Canada after their sponsorship is approved?
+    - The refugee I sponsored is arriving next week but I’m not ready for them. What should I do?
+    - I went to the airport but the refugee I sponsored wasn’t there. What should I do?
+    - Can I communicate with a refugee I sponsor before they arrive in Canada?
+    - My sponsor asked me to pay money toward the processing of my refugee application. Should I pay?
+    - My sponsor says they will guarantee that the Canadian government will accept my refugee application. Is that true?
+    - I am a privately sponsored refugee. My sponsor has asked me to pay money to support myself in Canada. Should I pay?
+    - I am coming to Canada as a privately sponsored refugee, and I am bringing some of my own money with me. Does my sponsor get any of this money?
+    - Does the Government of Canada ask private sponsors to collect money from me or my relatives to fund my sponsorship or settlement in Canada?
+    - What should I do if I already paid someone money to cover the cost of my refugee sponsorship?
+    - What can I expect from my sponsor after I travel to Canada as a refugee?
+    - My sponsor isn’t providing me with the support you said I should receive. What should I do?
+    - How many privately sponsored refugees does Canada accept each year?
+    - How many applications for privately sponsored refugees does Canada accept each year?
+    - What is a government-assisted refugee?
+    - Why does Canada resettle refugees?
+    - What kind of support do government-assisted refugees get?
+    - Do refugees get the same support across Canada?
+    - Do large and small families get the same amount of money?
+    - What special allowances may refugees get?
+    - How long does the support for government-assisted refugees last?
+    - Does government provide all the support to government-assisted refugees?
+    - Do in-Canada refugee claimants get resettlement assistance?
+    - Do government-assisted refugees get more income support and benefits than Canadian pensioners do?
+    - How do I make a refugee claim in Canada?
+    - I already made a refugee claim. What happens now that we submit claims through the IRCC Portal?
+    - Can my refugee claim be rejected based on what I write in the Basis of Claim form?
+    - I’m having problems making a refugee claim online. What do I do?
+    - I’m having technical problems making a refugee claim online. What do I do?
+    - Is legal assistance available to asylum claimants?
+    - What is a Refugee Protection Claimant Document (RPCD) and when will I get one?
+    - How do I replace my Refugee Protection Claimant Document if my claim was refused?
+    - How do I replace my Refugee Protection Claimant Document if my claim PRRA was approved?
+    - How do I replace my Refugee Protection Claimant Document if my application is still being reviewed?
+    - What should i do if RPCD got lost, stolen or damaged ?
+    - I need to submit documents to the Immigration and Refugee Board of Canada (IRB). Can I use the portal?
+    - I am a refugee and I need to travel outside Canada. What documents do I need to travel?
+    - What can I use to prove my status in Canada as a refugee or protected person?
+    - If I have an immigration loan, how can I make my payments?
+    - My last payment does not appear on my immigration loan statement. Why is that?
+    - I no longer receive immigration loan statements. Why is that?
+    - Where do I find my PAYEE number on my immigration loan statement?
+    - What happens if I do not make my loan payments?
+    - Is there a maximum loan amount?
+    - Is a 19-year old covered under the principal applicant’s loan?
+    - Can asylum seekers (those who make a refugee claim in Canada) get an immigration loan?
+    - How long will I have to repay my loan?
+    - When will I receive my immigration loan statement?
+    - When do I have to make my first immigration loan payment?
+    - Who can sponsor a refugee?
+    - Can I make a refugee claim from within Syria?
+    - How can Canadians help in our response to the Syrian crisis?
+    - How do I find a refugee to sponsor?
+    - How do I find a SAH I can volunteer to work with or otherwise contribute to?
+    - Does this means that Syrians and Iraqi from anywhere in the world can be resettled to Canada as refugees?
+    - What are the responsibilities of a sponsoring group?
+    - Who is eligible for sponsorship under the Private Sponsorship of Refugees Program?
+    - Who decides if a refugee can be sponsored?
+    - Who decides if a refugee can be resettled?
+    - Who cannot be sponsored under the Private Sponsorship of Refugees Program?
+    - Where can I find more information about applying to sponsor a refugee?
+    - Are there any fees for applying to sponsor a refugee?
+    - How is the Blended Visa Office-Referred Program different from the regular Private Sponsorship of Refugees Program?
+    - What is a government-assisted refugee?
+    - Why does Canada resettle refugees?
+    - Should I book flights to Canada for refugees I’m sponsoring?
+    - Why can’t you fly Syrian refugees to Canada faster?
+    - What immigration documents can I have replaced if they are lost, stolen or destroyed?
+    - How do I replace an immigration document that has been lost, stolen or destroyed?
+    - What is a Verification of Status document?
+    - What if I already submitted the old Verification of Entry form, do I have to resubmit a new form?
+    - Will I still get a certified true copy of my immigration document?
+    - How do I renew my permanent resident card?
+    - How long will it take to process my PR card?
+    - What should I do if my PR card has been lost, stolen or destroyed?
+    - How do I pay the fee for my permanent resident card?
+    - What should I do if my new permanent resident card has a mistake or something is missing?
+    - I am a new permanent resident living inside Canada,Will I get my permanent resident card by mail?
+    - I am already a permanent resident living inside Canada,Will I get my permanent resident card by mail?
+    - I am a permanent resident living outside of Canada,Will I get my permanent resident card by mail?
+    - How much does a permanent resident card cost?
+    - Should I submit photos with my PR card application?
+    - When should I apply for a permanent resident card?
+    - How can I avoid delays or refusals in processing my permanent resident card application?
+    - I was told that my permanent resident card was sent to me but I did not get it yet. What should I do?
+    - I legally changed my name. How do I update my PR card?
+    - I’ve lost my citizenship card/certificate. How do I replace it?
+    - What documents should I send with my application for a citizenship certificate (proof of citizenship)?
+    - How do I get a citizenship certificate (proof of citizenship) for someone under 18 years old?
+    - I legally changed my name. How do I change the name on my citizenship certificate or card?
+    - How do I correct an error on my immigration document?
+    - How do I avoid problems in correcting a record of landing or confirmation of permanent residence?
+
+- intent: faqs/service_standards
+  examples: |
+    - Why did Immigration, Refugees and Citizenship Canada (IRCC) introduce service standards?
+    - Why did Immigration, Refugees and Citizenship Canada (IRCC) introduce standards for these specific services and activities?
+    - What is the difference between processing times and service standards?
+    - Does Immigration, Refugees and Citizenship Canada (IRCC) report whether it meets its service standards?
+    - What happens if Immigration, Refugees and Citizenship Canada (IRCC) doesn’t meet its specified standards?
+    - Do the service standards apply to applications received before the standards came into effect?  
+    - Why has Immigration, Refugees and Citizenship Canada (IRCC) switched from business days to calendar days to communicate its service standards?
+
+- intent: faqs/settlement_services
+  examples: |
+    - Who is eligible to take government-funded language classes?
+    - How can I enrol in a government-funded language class at no cost to myself?
+    - Can my spouse take language classes with me?
+    - How long can I take language classes for?
+    - I started taking language classes but I’m moving. Can I keep taking classes in a new city?
+    - I'm working or studying in Canada temporarily. Can I take Government of Canada funded language classes?
+    - What are the language training programs funded by the Government of Canada?
+    - What are the language training programs funded by the provincial or territorial governments?
+
+- intent: faqs/sex_designation
+  examples: |
+    - How do I change the sex or gender identifier on my application or document if it was not my mistake?"
+    - How do I change the sex or gender identifier on my application or document?
+    - Do I need to notify IRCC of a change of sex or gender identifier if i am a canadian citizan?
+    - Do I need to notify IRCC of a change of sex or gender identifier if i am a permanent residents?
+    - Do I need to notify IRCC of a change of sex or gender identifier if i am a temporary resident?
+    - Do I need to notify IRCC of a change of sex or gender identifier if i am a protected person?
+    - Do I have to be a Canadian citizen to change the sex or gender identifier on my document?
+    - Will changing the gender identifier on my documents affect the decision on my application?
+    - Can I apply to change both my name and gender identifier at the same time on my documents?
+
+- intent: faqs/sponsoring_family
+  examples: |
+    - How does the Parents and Grandparents Program work?
+    - How many applications to sponsor parents and grandparents do you accept each year?
+    - How much income do I need to sponsor my parents and grandparents?
+    - What counts as income for sponsoring my parents and grandparents?
+    - Income sources that count toward your total income
+    - How to get your NOAs
+    - What’s considered social assistance when sponsoring my parents and grandparents?
+    - What is considered social assistance
+    - What isn’t considered social assistance
+    - How do I calculate my family size to sponsor my parents and grandparents?
+    - How can I show proof of income to sponsor my parents and grandparents?
+    - Does the change in age of dependants affect sponsorship undertakings for dependent children?
+    - Can I sponsor more than one person through the Parents and Grandparents Program?
+    - How do I update my information after I’ve submitted my interest to sponsor form?
+    - How do I make an electronic copy of my passport or proof of status in Canada document?
+    - Where is my status in Canada document number?
+    - I have a confirmation number. Am I guaranteed to get invited to sponsor my parents and grandparents?
+    - I was invited to submit an application to sponsor my parents and grandparents. What do I do next?
+    - What proof do I need for changes to my information after I was invited to apply to sponsor my parents?
+    - What if my birth certificate is different from other documents (or I don’t have one)?
+    - I was invited to apply to sponsor my parents, but didn’t get an email confirmation. How do I get it?
+    - Who can be my co-signer on my application to sponsor my parents and grandparents?
+    - What is a complex family sponsorship application?
+    - How do I pay for my application to sponsor a parent or grandparent?
+    - Can I hand-deliver my application to sponsor a parent or grandparent?
+    - Will you refuse my application if I include a parent or grandparent that wasn’t on my interest to sponsor form?
+    - What if the parent or grandparent I’m sponsoring has a separated spouse?
+    - Do I include time on parental leave in my employment history for sponsoring my parents?
+    - When should I send in my police certificates for my spousal sponsorship application?
+    - How can I sponsor my spouse or children?
+    - To sponsor my family members, do I need to fill out other documents if I live in Quebec?
+    - Will I get a letter confirming that IRCC got my application?
+    - I paid the overage dependant fee, but now the age limit for dependants has changed. Can I get a refund?
+    - Will it delay my application if I add a dependent child to my application?
+    - Can I sponsor a child who is over the age limit for a dependant?
+    - I already became a permanent resident. Can I still add my dependent child to my application?
+    - How can I find out if my application is affected by the change in the age of dependants?
+    - How can I check the status of my sponsorship application?
+    - What will happen to an application for a family member I didn’t declare if it’s in process, or was denied?
+    - How do I sponsor my undeclared family member through the pilot project?
+
+- intent: faqs/ukraine_immigration_measures
+  examples: |
+    - Who qualifies as a family member of a Ukrainian national?
+    - How do I check the status of my Canada-Ukraine authorization for emergency travel application?
+    - How do I upload documents to my IRCC Portal account after I’ve submitted my application?
+    - I’m already in Canada. How can I stay longer if I’m impacted by the Russian invasion of Ukraine?
+    - What is the purpose of introducing a foil-less visa, and for which group of individuals was it specifically implemented?
+    - What are the key differences in eligibility between a physical visa and a foil-less visa for Ukrainian nationals and their family members?
+    - What are the distinctions between a physical visa and a foil-less visa in terms of entry conditions, validity, and the process of obtaining the visa?
+    - What precautions are recommended for individuals holding a foil-less visa, especially concerning travel arrangements and potential issues during transit?
+
+- intent: faqs/work_permits
+  examples: |
+    - What is considered work?
+    - What do I need to work in Canada?
+    - Can I hold 2 valid work permits at the same time?
+    - How can I find out about jobs in Canada?
+    - What is a Labour Market Impact Assessment?
+    - I have received a Canadian job offer. What documents do I need from my future employer?
+    - Does my work permit allow me to work for any employer in Canada?
+    - Where do I find out if the employer who offered me a job is an eligible employer?
+    - What happens if I want to work for an ineligible employer?
+    - How long can I work in Canada as a temporary worker?
+    - Are there any conditions on my work permit?
+    - How do I remove medical conditions from my work permit?
+    - How long will it take to process my work permit application?
+    - Can I apply for a work permit when I enter Canada?
+    - Can I apply for a work permit as a visitor in Canada?
+    - I want to apply for a work permit by mail. How can I avoid my application being delayed or refused?
+    - How do I get a copy of a lost, stolen or destroyed work permit?
+    - What is an open work permit?
+    - What are Open work permit restrictions?
+    - What is a job offer letter?
+    - What is Employer compliance exemptions?
+    - There is a mistake in my name on my work permit, can you fix it?
+    - Who can apply for an open work permit?
+    - Are there different application forms for employer-specific and open work permits?
+    - I got a new passport after coming to Canada. Will that affect my application for a work permit?
+    - Can I appeal a decision on a work permit application?
+    - Can I extend my International Experience Canada work permit?
+    - Can I apply to extend my Seasonal Agricultural Worker Program work permit?
+    - Do I need a medical exam to get a work permit?
+    - How can I find a doctor who can provide the medical exam I need to come to Canada?
+    - Who needs a Labour Market Impact Assessment?
+    - Which work permit fees do I have to pay?
+    - What is a port of entry (POE) letter?
+    - How long is my POE Letter valid?
+    - I paid the $100 open work permit holder fee with my open work permit application, but the application was refused. Can I get a refund?
+    - What proof do I need to show that my employer paid the compliance fee and submitted the offer of employment?
+    - Employer compliance exemptions
+    - How do I change employers?
+    - Can I have a work permit and study permit at the same time?
+    - As a foreign worker, do I need an eTA or a visa to work in Canada?
+    - Can I pay for the temporary resident visa in my country’s money?
+    - How do I apply for a temporary resident visa?
+    - Should I apply for an eTA or a visa when I apply for a work permit?
+    - How can I help a family member or friend apply to visit Canada?
+    - I have a visitor visa. Can I leave Canada and come back?
+    - How do I know when my temporary resident status expires?
+    - I got a new passport but I have a valid visa in my old one. Can I use the visa in my old passport?
+    - How do I hire a temporary foreign worker if i create an offer of employment in the Employer Portal?
+    - How do I hire a temporary foreign worker if i Get an LMIA or submit an offer of employment?
+    - How do I hire a temporary foreign worker if Have the worker apply for a work permit
+    - How do I hire a temporary foreign worker and Tell the worker what to expect from their application
+    - As an employer, what are my obligations to temporary foreign workers?
+    - Can I lay off or fire a foreign worker?
+    - What if a foreign worker becomes sick, has an accident, is hospitalized or needs home recovery?
+    - How do I find out if I need a Labour Market Impact Assessment to hire a temporary worker?
+    - If my company merges with, or is taken over by, another company, what happens to employees who have temporary work permits?
+    - What do I need to do if my company name changes?
+    - Do I need to submit a new offer of employment if something in the offer has changed?
+    - What is the employer compliance fee? How do I pay it?
+    - What is Employer compliance exemptions?
+    - I paid the employer compliance fee, but the temporary worker’s application for a work permit was refused. Can I get a refund?
+    - I paid the employer compliance fee, but the worker is not coming to Canada. Can I get a refund?
+    - I want to submit an offer of employment. Where can I find the IMM 5802 form?
+    - When i need to complete the IMM 5802 form?
+    - How to request an IMM 5802 form?
+    - After I submit an offer of employment, do I have to wait for it to be approved before the temporary worker can apply for a work permit?
+    - Can an authorized representative submit an offer of employment on behalf of an employer?
+    - I don’t have a Canada Revenue Agency number. How do I submit an offer of employment?
+    - How do I change an offer of employment, or fix a mistake I made in one?
+    - Do I submit an offer of employment even if a foreign company will pay my company’s temporary worker?
+    - Who submits the offer of employment if a temporary worker will work for two or more Canadian companies?
+    - Under the International Mobility Program, can I reuse an offer of employment number if the matched work permit application was refused?
+    - Will I get a receipt for an offer of employment I submit through the Employer Portal?
+    - Can I change or fix a mistake in my business information in the Employer Portal?
+    - What is my Personal Identification Number (PIN) for the Employer Portal and where do I find it?
+    - I can't create an account in the Employer Portal because the information I entered already exists. What do I do?
+    - I can log into my account in the Employer Portal, but I can't submit an offer of employment. What is the problem?
+    - I've completed all the offer of employment forms in the Employer Portal, but I still can’t submit it. What should I do?
+    - Can I withdraw an offer of employment?
+    - Can a human resource placement agency submit offers of employment on behalf of my company?
+    - Can I attach documents to the offers of employment I submit in the Employer Portal?
+    - Can I attach documents about the offer of employment to a foreign worker’s work permit application?
+    - What is a Labour Market Impact Assessment?
+    - Who needs a Labour Market Impact Assessment?
+    - Why do I need another Labour Market Impact Assessment if I just got one a year ago?
+    - I want to extend my expiring work permit, but I don’t have a new LMIA or CAQ yet. What should I do?
+    - I am an entrepreneur. Do I need a Labour Market Impact Assessment to work in Canada?
+    - Can my spouse or common-law partner and dependent children come with me to Canada if i am coming to Canada for a short time?
+    - Can my spouse or common-law partner and dependent children come with me to Canada If i am moving to Canada permanently?
+    - Does each person applying to come to Canada have to fill out a separate application?
+    - If other family members are coming with me, what documents should I send with the application?
+    - Can my spouse or common-law partner work in Canada?
+    - I’m sponsoring my spouse or common-law partner. Can they work while their application is being processed?
+    - Can my dependent children work in Canada?
+    - I’m a Canadian citizen and my spouse is not. Can my spouse and dependent children work in Canada?
+    - I have an open work permit because my spouse is working/studying in Canada. For how long is my permit valid?
+    - How can I extend my stay as a worker?
+    - What steps my employer may need to take if i extend my stay as a worker?
+    - Can I apply to extend a work permit from inside Canada?
+    - My work permit has expired. Can I apply for another one?
+    - I work in Quebec. How can I extend my work permit?
+    - I applied for a new work permit. Can I stay in Canada if my work permit expires?
+    - Can I keep working if my permit expires? How do I prove this to my employer?
+    - I have applied to extend my work permit. Can I travel outside Canada?
+    - I’ve maintained my status, but my health insurance card, driver’s licence and other government ID documents have expired. How can I renew my ID documents?
+    - What to do if i need to renew my government ID document
+    - My work permit expired and I did not apply to extend it. Can I stay and keep working in Canada?
+    - I want to extend my expiring work permit, but I don’t have a new LMIA or CAQ yet. What should I do?
+    - I got a new passport after coming to Canada but I still have a valid work permit in my old one. What should I do?
+    - Can I extend my International Experience Canada work permit?
+    - Can I apply to extend my Seasonal Agricultural Worker Program work permit?
+    - My work permit expired, but I’ve maintained my status. Can I keep working under the same conditions of my initial work permit if my Social Insurance Number (SIN) is expired?
+    - Can I change my status to visitor if I need more time to extend my study or work permit?
+    - Why is my study or work permit only valid for part of my study program or job contract?
+    - Who is eligible for two-week work permit processing?
+    - Are all Global Skills Strategy (GSS) work permit applications processed in two weeks?
+    - I have a Global Talent Stream (GTS) LMIA, do I have to do anything else to get two-week processing? 
+    - When should I get my medical exam to apply for two-week work permit processing through the GSS?
+    - I’m applying for a work permit under the GSS. Do I need include a police certificate?
+    - I’m eligible for two-week processing under the GSS. Can I bring my family?
+    - Can I get two-week processing if I am applying under the International Mobility Program?
+    - What is Local visa office requirements if  I get two-week processing and I am applying under the International Mobility Program?
+    - I need an LMIA for my work permit application. How do I know if I am part of the Global Talent Stream?
+    - I’m an employer in the International Mobility Program. Do I still need to use the Employer Portal?
+    - How do I hire a temporary foreign worker using an LMIA issued by ESDC under the Global Talent Stream?

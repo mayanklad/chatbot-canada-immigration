@@ -205,15 +205,15 @@ out/
 .vscode/
 tmp_training_data.json
 .DS_Store
-models/
+# models/
 .mypy_cache/
-*.tar.gz
+# *.tar.gz
 secrets.tar
 .pytest_cache
 test_download.zip
 bower_components/
 build/lib/
-/models/
+# /models/
 node_modules/
 npm-debug.log
 examples/moodbot/py3/

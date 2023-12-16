@@ -30,7 +30,7 @@ class CustomChatbotAction(Action):
         X = user_input["input_ids"].to(self.device)
         a = user_input["attention_mask"].to(self.device)
 
-        output = self.model.generate(X, attention_mask=a, max_length=50)
+        output = self.model.generate(X, attention_mask=a, max_length=70)
         output = self.tokenizer.decode(output[0], skip_special_tokens=True)
         
         output = re.split('<bot>:', output)[-1].strip()
