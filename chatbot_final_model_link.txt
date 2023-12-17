@@ -1,3 +1,7 @@
 Chatbot model file trained on the complete immigration dataset:
 
 https://drive.google.com/drive/folders/1zJVPAUfLSqmAtE7X3pY7PIzJjv-YqAB7?usp=sharing
+
+HuggingFace Hub Hosted Link:
+Custom Trained Model: https://huggingface.co/mayanklad/faq-canada-immigration
+Custom Tokenizer: https://huggingface.co/mayanklad/faq-canada-immigration-tokenizer
